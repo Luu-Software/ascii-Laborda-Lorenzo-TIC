@@ -1,7 +1,16 @@
 import { preguntar } from './lib/consola.ts';
 
+function formulaRepetir(letra:string, cantidad:number):string {
+  let resultado = ""
+  while (cantidad > 0) {
+    resultado = resultado + letra
+    cantidad = cantidad - 1
+  }
+  return resultado
+}
+
 function repetirLetra(letra: string, cantidad: number): string {
-  return (letra.repeat(cantidad))
+  return formulaRepetir(letra, cantidad)
   // COMPLETAR
 }
 
