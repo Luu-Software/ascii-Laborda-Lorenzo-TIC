@@ -1,8 +1,17 @@
 import { preguntar } from './lib/consola.ts';
 
+function formulaRepetir(letra:string, cantidad:number):string {
+  let resultado = ""
+  while (cantidad > 0) {
+    resultado = resultado + letra
+    cantidad = cantidad - 1
+  }
+  return resultado
+}
+
 function repetirLetra(letra: string, cantidad: number): string {
-  // COMPLETAR o importar desde index.ts
-  return (letra.repeat(cantidad))
+  return formulaRepetir(letra, cantidad)
+  // COMPLETAR
 }
 
 function filaTrianguloIsoceles(letra: string, fila: number, tamaño: number): string {
